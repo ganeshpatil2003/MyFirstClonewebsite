@@ -1,0 +1,107 @@
+@media screen and (max-width:991px){
+
+    .nav-toggel{
+        display: block;
+        margin-right:20px;
+    }
+    .naive-link{
+        position: absolute;
+        background-color: white;
+        left:-100%;
+        top:100%;
+        width:100%;
+        padding-block:20px;
+        transition: 0.2s ease-in-out ;
+    }
+    .naive-link.active{
+        left:0;
+    }
+    .naive-link ul{
+        flex-direction:column;
+    }
+    .main-naive{
+        overflow: initial;
+    }
+    .example-card{
+        width:calc(50% - 10px);
+        
+        height: 180px;
+    }
+    .example-area{
+        gap:20px;
+    }
+
+    .cta-section{
+        padding-block:80px;
+    }
+    h3{
+        font-size:1.2rem;
+    }
+}
+
+
+@media screen  and (max-width: 767px) {
+    .header-section{
+        flex-direction:column-reverse;
+    }
+    .header-left{
+        text-align:center;
+    }
+    .primary-button{
+        text-align:center;
+        width: 100%;
+    }
+    .feature-card{
+        width:calc(50% - 10px);
+    }
+
+    .big-feature-container,#big-feature-image{
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction:column;
+        gap:40px;
+        align-items:center;
+        text-align:center;
+    }
+    .link-column{
+        align-items: stretch;
+    }
+    .subfooter{
+        flex-wrap: wrap;
+    }
+}
+    
+    @media screen and (max-width:479px) {
+        :root{
+            --padding-inline-section:10px;
+        }
+        .naive-link{
+            position: absolute;
+            background-color: white;
+            left:-100%;
+            top:100%;
+            width:100%;
+            padding-block:20px;
+            transition: 0.2s ease-in-out ;
+        }
+        .naive-link.active{
+            left:0;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        
+        h2{
+            font-size:1.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .feature-card{
+            width:100%;
+        }
+        .example-card{
+            width:100%;
+        }
+}
